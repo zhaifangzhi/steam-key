@@ -1,11 +1,11 @@
 FROM node:latest
 
 RUN npm install -g pm2
-RUN mkdir /app
-WORKDIR /app
+RUN mkdir /app/
+WORKDIR /app/uskey
 
 ENV STKEY_ID test
-ENV STKEY_NAME 本地测试
+ENV STKEY_NAME 美国服务器
 ENV STKEY_SERVER_BY your name
 
 ADD package*.json ./
