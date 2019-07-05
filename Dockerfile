@@ -1,8 +1,8 @@
 FROM node:latest
 
 RUN npm install -g pm2
-RUN mkdir /app/
-WORKDIR /app/uskey
+RUN mkdir /app
+WORKDIR /app
 
 ENV STKEY_ID test
 ENV STKEY_NAME 美国服务器
@@ -17,4 +17,4 @@ CMD echo "{\
     \"id\":   \"$STKEY_ID\",\
     \"name\": \"$STKEY_NAME\",\
     \"serverBy\": \"$STKEY_SERVER_BY\"\
-}" > /app/uskey/config.json && pm2-docker server.js
+}" > /app/config.json && pm2-docker server.js
