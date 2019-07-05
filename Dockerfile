@@ -17,4 +17,4 @@ CMD echo "{\
     \"id\":   \"$STKEY_ID\",\
     \"name\": \"$STKEY_NAME\",\
     \"serverBy\": \"$STKEY_SERVER_BY\"\
-}" > /app/config.json && pm2-docker server.js
+}" > /app/uskey/config.json && pm2-docker server.js
