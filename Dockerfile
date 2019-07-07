@@ -5,7 +5,7 @@ RUN mkdir /app
 WORKDIR /app
 
 ENV STKEY_ID test
-ENV STKEY_NAME 美国服务器
+ENV STKEY_NAME 日本服务器
 ENV STKEY_SERVER_BY your name
 
 ADD package*.json ./
